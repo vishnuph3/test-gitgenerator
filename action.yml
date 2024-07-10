@@ -1,6 +1,6 @@
-name:"Github Generator"
-author:"vishnuprasad hegde"
-description:"Generates a feed for podcast from yaml file"
+name: "Github Generator"
+author: "vishnuprasad hegde"
+description: "Generates a feed for podcast from yaml file"
 runs:
   using: "docker"
   image: "Dockerfile"
@@ -9,7 +9,7 @@ branding:
   color: "red"
 inputs:
   email:
-    description: The commiter email address
+    description: The commiter's email address
     required: true
     default: ${{ github.actor }}@localhost
   name:
